@@ -1,0 +1,59 @@
+body{
+    perspective: 600px;
+    background-color: burlywood;
+}
+.container{
+    border: cadetblue 4px solid;
+    position: relative;
+    width: 350px;
+    height: 350px;
+    margin: 100px auto;
+    padding: 30px;
+}
+.card{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: all 3s;
+    -webkit-transition: all 3s;
+    -moz-transition: all 3s;
+    -ms-transition: all 3s;
+    -o-transition: all 3s;
+    transform-style: preserve-3d;
+}
+.front{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../images/baby.png);
+    background-size: 100% 100%;
+    
+}
+
+.back{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    background-color: cadetblue;
+    color: burlywood;
+    background-size: 100% 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    line-height: 300px;
+    box-sizing: border-box;
+    text-align: center;
+
+}
+.card:hover{
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
+h1{
+    font-size: 40px;
+    text-align: center;
+    text-transform: capitalize;
+    line-height: 300px;
+}
